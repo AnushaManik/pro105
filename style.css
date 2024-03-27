@@ -1,0 +1,15 @@
+body{
+    background: linear-gradient(#f4d10d 0%, #a424f4 100%);}
+    #camera{
+        width: 350px;
+        height: 350px;
+        border: dashed black 2px;
+    }
+    .heading{
+        width: 60%;
+        font-size: large;
+    
+    }
+    #family_member_name,#accuracy_member,.name_of_people{
+        color: rgb(20, 0, 39);
+    }

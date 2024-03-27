@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Face recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h3 class="btn btn-default heading">Face Recognition Web App</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following people: </p>
+<b class="name_of_people">
+  Brother
+  <hr>
+  Anusha
+  <hr>
+  Sister
+  <hr>
+</b>
+      <label>Webcam View - </label>
+<div id="camera"></div>
+<br><br>
+<div id="result"></div>
+      <br><br>
+
+<button onclick="take_snapshot()" class="btn btn-info">Take snapshot</button>
+      <br><br>
+      <button onclick="identify_img()" class="btn btn-info">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Family Member Name : <span id="family_member_name"></span> </p>
+      <p style="font-size: 22px;">Accuracy :<span id="accuracy_member"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
